@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15a9c3"
+    tools:context=".activity.LockSetActivity">
+
+    <TextView
+        android:id="@+id/lockset_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="암호설정"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <TextView
+        android:id="@+id/lockset_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="본인 인증에 사용할 암호 입력해주세요"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lockset_title" />
+
+    <TextView
+        android:id="@+id/lockset_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="36dp"
+        android:paddingHorizontal="10dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="48sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/lockset_t2"
+        app:layout_constraintTop_toBottomOf="@id/lockset_subtitle" />
+
+    <TextView
+        android:id="@+id/lockset_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:paddingHorizontal="10dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="48sp"
+        app:layout_constraintLeft_toRightOf="@id/lockset_t1"
+        app:layout_constraintRight_toLeftOf="@id/lockset_t3"
+        app:layout_constraintTop_toTopOf="@id/lockset_t1" />
+
+    <TextView
+        android:id="@+id/lockset_t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:paddingHorizontal="10dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="48sp"
+        app:layout_constraintLeft_toRightOf="@id/lockset_t2"
+        app:layout_constraintRight_toLeftOf="@id/lockset_t4"
+        app:layout_constraintTop_toTopOf="@id/lockset_t1" />
+
+    <TextView
+        android:id="@+id/lockset_t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:paddingHorizontal="10dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="48sp"
+        app:layout_constraintLeft_toRightOf="@id/lockset_t3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lockset_t1" />
+
+    <View
+        android:id="@+id/lockset_stick1"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="#fff"
+        app:layout_constraintLeft_toLeftOf="@id/lockset_t1"
+        app:layout_constraintRight_toRightOf="@id/lockset_t1"
+        app:layout_constraintTop_toBottomOf="@id/lockset_t1" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="#fff"
+        app:layout_constraintLeft_toLeftOf="@id/lockset_t2"
+        app:layout_constraintRight_toRightOf="@id/lockset_t2"
+        app:layout_constraintTop_toBottomOf="@id/lockset_t2" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="#fff"
+        app:layout_constraintLeft_toLeftOf="@id/lockset_t3"
+        app:layout_constraintRight_toRightOf="@id/lockset_t3"
+        app:layout_constraintTop_toBottomOf="@id/lockset_t3" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="#fff"
+        app:layout_constraintLeft_toLeftOf="@id/lockset_t4"
+        app:layout_constraintRight_toRightOf="@id/lockset_t4"
+        app:layout_constraintTop_toBottomOf="@id/lockset_t4" />
+
+    <Button
+        android:id="@+id/lockset_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="1"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/lockset_p2"
+
+        app:layout_constraintTop_toBottomOf="@id/lockset_stick1" />
+
+    <Button
+        android:id="@+id/lockset_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="2"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/lockset_p1"
+        app:layout_constraintRight_toLeftOf="@id/lockset_p3"
+        app:layout_constraintTop_toTopOf="@id/lockset_p1" />
+
+    <Button
+        android:id="@+id/lockset_p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="3"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/lockset_p2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lockset_p1" />
+
+    <Button
+        android:id="@+id/lockset_p4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="4"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/lockset_p5"
+
+        app:layout_constraintTop_toBottomOf="@id/lockset_p1" />
+
+    <Button
+        android:id="@+id/lockset_p5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="5"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/lockset_p4"
+        app:layout_constraintRight_toLeftOf="@id/lockset_p6"
+        app:layout_constraintTop_toTopOf="@id/lockset_p4" />
+
+    <Button
+        android:id="@+id/lockset_p6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="6"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/lockset_p5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lockset_p4" />
+
+    <Button
+        android:id="@+id/lockset_p7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="7"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/lockset_p5"
+
+        app:layout_constraintTop_toBottomOf="@id/lockset_p4" />
+
+    <Button
+        android:id="@+id/lockset_p8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="8"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/lockset_p7"
+        app:layout_constraintRight_toLeftOf="@id/lockset_p9"
+        app:layout_constraintTop_toTopOf="@id/lockset_p7" />
+
+    <Button
+        android:id="@+id/lockset_p9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="9"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/lockset_p8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lockset_p7" />
+
+    <ImageButton
+        android:id="@+id/lockset_del"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/bg_passwd_btn"
+        android:src="@drawable/ic_keyboard_backspace"
+        android:text="del"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/lockset_p0"
+        app:layout_constraintLeft_toLeftOf="@id/lockset_p7"
+        app:layout_constraintRight_toRightOf="@id/lockset_p7"
+        app:layout_constraintTop_toTopOf="@id/lockset_p0" />
+
+    <Button
+        android:id="@+id/lockset_p0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_passwd_btn"
+        android:text="0"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/lockset_p8"
+        app:layout_constraintRight_toRightOf="@id/lockset_p8"
+        app:layout_constraintTop_toBottomOf="@id/lockset_p8" />
+
+    <ImageButton
+        android:id="@+id/lockset_check"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/bg_passwd_btn"
+        android:src="@drawable/ic_check"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/lockset_p0"
+        app:layout_constraintLeft_toLeftOf="@id/lockset_p9"
+        app:layout_constraintRight_toRightOf="@id/lockset_p9"
+        app:layout_constraintTop_toTopOf="@id/lockset_p0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

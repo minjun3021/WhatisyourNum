@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="message"
+        android:summary="번호 질의 문자가 왔을때 자동응답"
+        android:title="문자 응답" />
+</PreferenceScreen>
